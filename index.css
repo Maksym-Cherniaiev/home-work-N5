@@ -1,21 +1,13 @@
 .taskContainer {
 	width: 968px;
 	margin: auto;
-	background-color: rgb(245, 239, 242);
+	background-color: rgb(239, 239, 239);
 }
 
 .backing {
-	margin-left: 40px;
+	border: 1px solid rgb(190, 190, 190);
+	margin: 20px 40px;
+	border-radius: 5px;
+	background-color: rgb(221, 219, 223);
 }
 
-.taskOne {
-	background-color: rgb(222, 240, 220);
-}
-
-.taskTwo {
-	background-color: rgb(238, 220, 250);
-}
-
-.taskThree {
-	background-color: rgb(210, 240, 234);
-}
