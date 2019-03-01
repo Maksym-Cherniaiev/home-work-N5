@@ -2,7 +2,7 @@ document.querySelector(".calc-height").addEventListener("click", printPyramid);
 
 class Pyramid {
   constructor() {
-    this.result = document.querySelector(".result");
+    this.result = document.querySelector(".pyramid");
     this.height = parseInt(document.querySelector(".pyramid-height").value);
     this.createPyramid();
   }
