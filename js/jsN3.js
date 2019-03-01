@@ -8,7 +8,8 @@ class Stairs {
     this.counter = 0;
     this.countStairs();
   }
-  
+  // I could use here a FOR loop instead of DO WHILE.
+
   countStairs() {
     do {
       this.stair = this.stair + "#";

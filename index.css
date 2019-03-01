@@ -11,3 +11,10 @@
 	background-color: rgb(221, 219, 223);
 }
 
+.list-of-numbers {
+  width: 40px;
+}
+
+.centered {
+  text-align: center;
+}
