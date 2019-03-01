@@ -9,6 +9,7 @@ class SumOfRange {
     this.rangeFinish = parseInt(document.querySelector(".range-finish").value);
     this.countSumOfRange();
   }
+  // I didn't want to use FOR loop 
 	countSumOfRange() {
   	while (this.rangeStart <= this.rangeFinish) {
       this.sum = this.sum + this.rangeStart;

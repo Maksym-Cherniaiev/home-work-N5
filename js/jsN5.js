@@ -13,7 +13,7 @@ class SmalestNum {
   arrOfNums() {
     this.arrOfNums = [this.numA, this.numB, this.numC, this.numD];
     for (let i = 0; i < this.arrOfNums.length; i++) {
-    	if (this.arrOfNums[i] < this.arrOfNums[0]) {
+    	if (parseInt(this.arrOfNums[i]) < parseInt(this.arrOfNums[0])) {
       	this.arrOfNums[0] = this.arrOfNums[i];
       }
     }
