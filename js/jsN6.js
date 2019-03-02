@@ -2,29 +2,35 @@ document.querySelector(".calc-height").addEventListener("click", printPyramid);
 
 class Pyramid {
   constructor() {
+    this.rowCount = 0;
     this.result = document.querySelector(".pyramid");
     this.height = parseInt(document.querySelector(".pyramid-height").value);
-    this.createPyramid();
+    this.showMessage();
   }
 
-  // this one was quite hard ))
+  showMessage() {
+    this.pyramidMessage = document.querySelector(".pyramid-message");
+    this.pyramidMessage.classList.add("piramid-message-visible");
+  }
+}
 
+class CountSpace extends Pyramid {
+  constructor() {
+    super();
+    this.createPyramid();
+  }
+  
   createPyramid() {
-    for (let i = 0; i < this.height; i++) {
-      let newRow = document.createElement("p");
-      let row = "";
-      for (let j = 1; j < this.height - i;   j++) {
-        row += "_";
-      }
-      for (let k = 1; k <= (2 * i + 1); k++) {
-        row += "#";
-      }
-      newRow.textContent = row;
-      this.result.appendChild(newRow);
+    for (this.rowCount; this.rowCount < this.height; this.rowCount++) {
+      this.newRow = document.createElement("p");
+      this.space = "_".repeat(this.height - this.rowCount);
+      this.sign = "#".repeat(this.rowCount * 2 + 1);
+      this.newRow.textContent = this.space + this.sign;
+      this.result.appendChild(this.newRow);
     }
   }
 }
 
 function printPyramid() {
-  let newPyramid = new Pyramid();
+  let newPyramid = new CountSpace();
 }
