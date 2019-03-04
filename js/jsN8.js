@@ -10,7 +10,7 @@ class PassHandler {
   
   checkIfCorrect() {
   	for (let i = 0; i < this.password.length; i++) {
-    	if (this.userValue.toLowerCase() === this.password[i].toLowerCase()) {
+    	if (this.userValue.toLowerCase() === this.password[i]) {
         this.result.textContent = "true";
         return this.userValue;
       } else {

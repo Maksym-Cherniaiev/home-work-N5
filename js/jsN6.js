@@ -4,7 +4,7 @@ class Pyramid {
   constructor() {
     this.rowCount = 0;
     this.result = document.querySelector(".pyramid");
-    this.height = parseInt(document.querySelector(".pyramid-height").value);
+    this.height = +(document.querySelector(".pyramid-height").value);
   }
 }
 
