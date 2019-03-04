@@ -19,9 +19,6 @@
   text-align: center;
 }
 
-.pyramid-message {
-	visibility: hidden;
-}
-.piramid-message-visible {
-	visibility: visible;
+.white-space {
+	white-space: pre;
 }
